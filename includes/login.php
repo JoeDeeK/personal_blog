@@ -24,49 +24,41 @@ if(isset($_POST["Submit"])){
 }
 ?>
 
-				<div class="container">
-				<div class="row justify-content-center">		
-				<div class="col-5">
-				<?php 
-					echo Message();
-					echo SuccessMessage();
-				?>
-					<h2>Login</h2>
-					
-					<div>
-						<form action="index.php?Dash=true" method="post">
-							<fieldset>
-								<div class="form-group">
-									<label for="username"><span class="FieldInfo">Username:</span></label>
-									
-									<div class="input-group input-group-lg">
-									<span class="input-group-addon">
+<div class="container">
+	<div class="row justify-content-center">		
+		<div class="col-5">
+			<?php 
+				echo Message();
+				echo SuccessMessage();
+			?>
+			<h2>Login</h2>
+			<div>
+				<form action="index.php?Dash=true" method="post">
+					<fieldset>
+						<div class="form-group">
+							<label for="username"><span class="FieldInfo">Username:</span></label>
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon">
 									<span class="glyphicon glyphicon-user text-success"></span>
-									</span>
-									
-									<input class="form-control" type="text" name="username" id="username" placeholder="Username">
-								  
-								  </div>
-								</div>
-								<div class="form-group">
-									<label for="password"><span class="FieldInfo">Password:</span></label>
-									
-									<div class="input-group input-group-lg">
-									<span class="input-group-addon">
+								</span>
+								<input class="form-control" type="text" name="username" id="username" placeholder="Username">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="password"><span class="FieldInfo">Password:</span></label>
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon">
 									<span class="glyphicon glyphicon-lock text-success"></span>
-									</span>
-									<input class="form-control" type="Password" name="password" id="password" placeholder="Password">
-									</div>
-								</div>
-								
-								<br>
-								<input class="btn btn-success btn-block" type="Submit" name="Submit" value="Login">
-							</fieldset>
-							<br>
-						</form>
-					</div>
-					
-					</div>
-					</div>
-					</div>
-				
+								</span>
+								<input class="form-control" type="Password" name="password" id="password" placeholder="Password">
+							</div>
+						</div>
+						<br>
+						<input class="btn btn-success btn-block" type="Submit" name="Submit" value="Login">
+					</fieldset>
+					<br>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

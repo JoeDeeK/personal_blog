@@ -18,14 +18,14 @@
 			$PostIdFromUrl=$_GET['Id'];
 			$Query="INSERT INTO comments (datetime, name, email, comment, approvedby, status, admin_panel_id)
 					VALUES ('$DateTime','$Name','$Email','$Comment', 'Pending', 'OFF','$PostIdFromUrl')"; 
-			$Execute=mysql_query($Query); //Info is saving in database
+			$Execute=mysql_query($Query);
 			
 			if($Execute){
 				$_SESSION["SuccessMessage"]="Comment Submitted Successfully";
-				Redirect_to("index.php?Id={$PostId}"); //Does try to load this page,  however page is blank
+				Redirect_to("index.php?Id={$PostId}");
 			}else{
 				$_SESSION["ErrorMessage"]="Something went wrong, try again";
-				Redirect_to("index.php?Id={$PostId}"); //Does try to load this page,  however page is blank
+				Redirect_to("index.php?Id={$PostId}");
 			}
 		}			
 	}
@@ -80,8 +80,8 @@
 </div>
 	<?php } ?>
 
-	
 <br><br><br><br>
+
 <span class="FieldInfo">Comments</span>			
 <?php
 	$PostIdForComments=$_GET["Id"];

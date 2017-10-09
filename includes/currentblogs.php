@@ -1,10 +1,8 @@
-<?php //Confirm_Login();?>
 
-
-	<?php 
-		echo Message(); 
-		echo SuccessMessage() 
-	?>
+<?php 
+	echo Message(); 
+	echo SuccessMessage() 
+?>
 
 					
 <h1>Current Blogs</h1>
@@ -44,7 +42,6 @@
 			</td>
 			<td>
 				<?php
-					//if(strlen($DateTime)>16){$DateTime=substr($DateTime,0,18).'..';}
 					echo $DateTime; 
 				?>
 			</td>
@@ -85,11 +82,15 @@
 		
 		</td>
 		<td>
-			<a href="index.php?Dash=true&Display=EditPost&Edit=<?php echo $Id; ?>"><span class="btn btn-outline-warning" style="width: 100%;">Edit</span></a>
-			<a href="index.php?Dash=true&Display=DeletePost&Delete=<?php echo $Id; ?>"><span class="btn btn-outline-danger">Delete</span></a>
+			<a href="index.php?Dash=true&Display=EditPost&Edit=<?php echo $Id; ?>">
+				<span class="btn btn-outline-warning" style="width: 100%;">Edit</span>
+			</a>
+			<a href="index.php?Dash=true&Display=DeletePost&Delete=<?php echo $Id; ?>">
+				<span class="btn btn-outline-danger">Delete</span>
+			</a>
 		</td>
 		<td>
-			<a href="index.php?Id=<?php echo $Id; ?>" target="_blank"> <!-- Change the &ViewQuery and set Dashboard to false -->
+			<a href="index.php?Id=<?php echo $Id; ?>" target="_blank">
 				<span class="btn btn-outline-primary">Live Preview</span>
 			</a>
 		</td>

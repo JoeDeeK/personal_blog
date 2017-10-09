@@ -14,8 +14,7 @@
 <h6>About the Author</h6>
 <img src="images/beachgirl.jpg">
 <h6>Jody Kirton</h6>
-<p>Small town girl, living in the big city. Explorer, Adventurer, and Computer Programmer.
-</p>
+<p>Small town girl, living in the big city. Explorer, Adventurer, and Computer Programmer.</p>
 
 <hr>
 <br>
