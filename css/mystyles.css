@@ -1,0 +1,115 @@
+.card {
+	border-radius: 0px;
+	margin-bottom: 1em;
+}
+
+footer {
+	text-align: center;
+}
+
+.container {
+	margin-top: 2em;
+}
+
+.col-3 img {
+	max-width: 100%;
+	margin-bottom: 1em;
+}
+
+.col-3 p {
+	color: gray;
+}
+
+.nav-pills {
+	padding-top: 3.3em;
+	padding-right: 1em;
+}
+
+.img-responsive {
+	max-width: 100%;
+}
+
+.border-danger {
+	float: right;
+}
+
+.col-5 h2 {
+	text-align: center;
+}
+
+.FieldInfo {
+	color: #DCB085;
+	font-size: 1em;
+	padding-bottom: 1.5em;
+}
+
+label {
+	font-weight: bold;
+}
+
+.CommentBlock{
+	background-color: #F6F7F9;
+}
+
+.Comment-info{
+	color: #36CEDB;
+	font-family: sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.comment{
+	margin-top: -2px;
+	padding-bottom: 10px;
+	font-size: 1.1em;
+}
+
+.card-text {	
+	font-weight:bold;
+	margin-top:-2px;	
+}
+
+.card-title {
+	font-family: Bitter, Georgia, "Times New Roman", Times, Serif;
+	font-weight: bold;
+	color: #36CEDB;
+	font-size: 250%;
+}
+
+h6 a {
+	float: right;
+	color:#36CEDB;
+}
+
+.ReadMore, .badge {
+	float: right;
+}
+
+.card-img-overlay a {
+	color: white;
+	text-decoration: none;
+}
+
+.card-img-overlay {
+	max-width: 40rem;
+	max-height: 10rem;
+	background: rgba(0,0,0,0.3);
+	margin: auto;
+}
+
+.flex-column .nav-link {
+	border-radius: 0;
+}
+
+.nav-link {
+	font-size: 125%;
+}
+
+.container .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card {
+	color: gray;
+}
