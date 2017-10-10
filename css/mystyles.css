@@ -11,12 +11,12 @@ footer {
 	margin-top: 2em;
 }
 
-.col-3 img {
+.col-md-3 img {
 	max-width: 100%;
 	margin-bottom: 1em;
 }
 
-.col-3 p {
+.col-md-3 p {
 	color: gray;
 }
 
@@ -112,4 +112,10 @@ h6 a {
 
 .card {
 	color: gray;
+}
+
+@media (max-width: 991x) {
+	.card-img-overlay h3 {
+		visibility: hidden;
+	}
 }
