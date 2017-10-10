@@ -114,8 +114,8 @@ h6 a {
 	color: gray;
 }
 
-@media (max-width: 991x) {
-	.card-img-overlay h3 {
+@media (max-width: 600px) {
+	.card-img-overlay h3{
 		visibility: hidden;
-	}
+	} 
 }
