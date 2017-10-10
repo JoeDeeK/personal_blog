@@ -1,8 +1,8 @@
 
 <div>
-	<?php 
-		echo Message(); 
-		echo SuccessMessage() 
+	<?php
+		echo Message();
+		echo SuccessMessage()
 	?>
 </div>
 
@@ -18,7 +18,7 @@
 			<th>Delete</th>
 			<th>Details</th>
 		</tr>
-	<?php 
+	<?php
 		$Query="SELECT * FROM comments WHERE status='OFF' ORDER BY id DESC";
 		$Execute=mysql_query($Query);
 		$SrNo=0;
@@ -31,21 +31,21 @@
 			$SrNo++;
 			if(strlen($PersonName)>10){$PersonName = substr($PersonName,0,10).'...';}
 	?>
-		<tr> 
+		<tr>
 			<td><?php echo htmlentities($SrNo); ?></td>
 			<td style="color: #5e5eff;"><?php echo htmlentities($PersonName); ?></td>
 			<td><?php echo htmlentities($DateTimeofComment); ?></td>
 			<td><?php echo htmlentities($PersonComment); ?></td>
-			<td><a href="index.php?Dash=true&Display=Comments&ApproveComment=<?php echo $CommentId; ?>"><span class="btn btn-success">Approve</span></a></td>
-			<td><a href="index.php?Dash=true&Display=Comments&DeleteComment=<?php echo $CommentId; ?>"><span class="btn btn-danger">Delete</span></a></td>
-			<td><a href="index.php?Id=<?php echo $CommentedPostId; ?> "target="_blank"><span class="btn btn-primary">Live Preview</span></a></td>
+			<td><a href="index.php?Dash=true&Display=Comments&ApproveComment=<?php echo $CommentId; ?>"><span class="btn btn-outline-success">Approve</span></a></td>
+			<td><a href="index.php?Dash=true&Display=Comments&DeleteComment=<?php echo $CommentId; ?>"><span class="btn btn-outline-danger">Delete</span></a></td>
+			<td><a href="index.php?Id=<?php echo $CommentedPostId; ?> "target="_blank"><span class="btn btn-outline-primary">Live Preview</span></a></td>
 		</tr>
-	<?php 
-		} 
+	<?php
+		}
 	?>
 	</table>
 </div>
-					
+
 <h1>Approved Comments</h1>
 <div class="table-responsice">
 	<table class="table table-striped table-hover">
@@ -58,9 +58,9 @@
 			<th>Delete</th>
 			<th>Details</th>
 		</tr>
-		<?php 
-			$Admin=$_SESSION["Username"];							
-			$Query="SELECT * FROM comments WHERE status='ON' ORDER BY id DESC";			
+		<?php
+			$Admin=$_SESSION["Username"];
+			$Query="SELECT * FROM comments WHERE status='ON' ORDER BY id DESC";
 			$Execute=mysql_query($Query);
 			$SrNo=0;
 			while($DataRows=mysql_fetch_array($Execute)){
@@ -78,12 +78,12 @@
 					<td style="color: #5e5eff;"><?php echo htmlentities($PersonName); ?></td>
 					<td><?php echo htmlentities($DateTimeofComment); ?></td>
 					<td><?php echo htmlentities($PersonComment); ?></td>
-					<td><a href="index.php?Dash=true&Display=Comments&DisapproveComment=<?php echo $CommentId; ?>"><span class="btn btn-warning">Disapprove</span></a></td>
-					<td><a href="index.php?Dash=true&Display=Comments&DeleteComment=<?php echo $CommentId; ?>"><span class="btn btn-danger">Delete</span></a></td>								
-					<td><a href="index.php?Id=<?php echo $CommentedPostId; ?>" target="_blank"><span class="btn btn-primary">Live Preview</span></a></td>
+					<td><a href="index.php?Dash=true&Display=Comments&DisapproveComment=<?php echo $CommentId; ?>"><span class="btn btn-outline-warning">Disapprove</span></a></td>
+					<td><a href="index.php?Dash=true&Display=Comments&DeleteComment=<?php echo $CommentId; ?>"><span class="btn btn-outline-danger">Delete</span></a></td>
+					<td><a href="index.php?Id=<?php echo $CommentedPostId; ?>" target="_blank"><span class="btn btn-outline-primary">Live Preview</span></a></td>
 				</tr>
 		<?php
-			} 
-		?> 
+			}
+		?>
 	</table>
-</div> 
+</div>
