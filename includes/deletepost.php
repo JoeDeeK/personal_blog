@@ -13,7 +13,6 @@
 		
 		$Admin=$_SESSION["Username"];
 
-		$SearchQueryParameter=$_GET['Delete'];
 		$DeleteFromURL=$_GET['Delete'];
 		$DeleteQuery="DELETE FROM admin_panel WHERE id='$DeleteFromURL'";
 		
